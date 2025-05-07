@@ -6,7 +6,7 @@ This repo is used for learning Java and Spring Boot.
 This app has auth endpoints (`/auth/login`, `/auth/register`) and (`/healthCheck`). Uses PostgreSQL.
 Tasklist coming soon.
 
-![Last Commit](https://img.shields.io/github/last-commit/Jozefwl/tasklist-spring?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/Jozefwl/tasklist?style=for-the-badge)
 ![Java Version](https://img.shields.io/badge/Java-21-red?style=for-the-badge&logo=openjdk)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4.5-darkgreen?style=for-the-badge&logo=spring)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-black?style=for-the-badge&logo=postgresql)
