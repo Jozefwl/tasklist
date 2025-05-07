@@ -34,12 +34,12 @@ Registers a new user.
 ```
 
 #### `POST /auth/login`
-Logs in a user and returns a mock token.
+Logs in a user and returns a JWT token.
 
 - **Request Body:**
 ```json
 {
-  "username": "existingUser",
+  "username": "newUser",
   "password": "userPassword"
 }
 ```
@@ -72,17 +72,7 @@ Tasklist is todo as i am having a hard time with importing JWT dependencies
 
 **How to Run:**
 
-1. Clone the repo:
-```bash
-git clone <repo-url>
-```
-
-2. Navigate to the project folder and run:
-```bash
-cd tasklist-spring && gradlew bootRun
-```
-
-3. Call REST API @ `http://localhost:8080/xxx`.
+idk figure it out
 
 ---
 
