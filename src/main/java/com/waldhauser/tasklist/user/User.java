@@ -1,15 +1,27 @@
 package com.waldhauser.tasklist.user;
 
+import jakarta.persistence.*;
+import java.util.UUID;
+
+@Entity
+@Table(name = "users") // set which table to use
 public class User {
-    private Long id;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID) // this is jakarta import and generated value UUID bc database sets it
+    private UUID id;
+
+    @Column(unique = true, nullable = false)
     private String name;
+
+    @Column(nullable = false)
     private String password;
 
     // Generate -> Constructors
     public User() {
     }
 
-    public User(Long id, String name, String password) {
+    public User(UUID id, String name, String password) {
         this.id = id;
         this.name = name;
         this.password = password;
@@ -23,11 +35,11 @@ public class User {
 
     // Generate -> Getter and Setter
     // Getters
-    public Long getId() {
+    public UUID getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(UUID id) {
         this.id = id;
     }
 
